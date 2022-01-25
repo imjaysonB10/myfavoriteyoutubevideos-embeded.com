@@ -1,0 +1,94 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+background-image:url(../img/1.png);
+height: 100vh;
+background-size: cover;
+background-position: center;
+font-family: Century Gothic;
+}
+
+.menu-bar{
+margin-top: 5px;
+background-color: rgba(0,0,0,0.8);
+text-align: left;
+}
+
+.menu-bar ul{
+margin-left: 75px;
+display: inline-flex;
+list-style: none;
+color: #fff;
+}
+
+.menu-bar ul li{
+width: 120 px;
+margin: 15px;
+padding: 15px;
+}
+
+.menu-bar ul li a{
+text-decoration: none;
+color: #fff;
+}
+
+.active, .menu-bar ul li:hover{
+background: rgba(255, 99, 71, 0.6);
+border-radius: 3px;
+}
+
+.sub-menu{
+display: none;
+}
+
+.menu-bar ul li:hover .sub-menu{
+display: block;
+position: absolute;
+background-color: rgba(0,0,0,0.8);
+margin-top: 15px;
+margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu ul{
+display: block;
+margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu ul li{
+width: 150px:
+padding: 10px;
+border-bottom: 1px dotted #fff;
+background: transparent;
+boder-radius: 0;
+text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu ul li:last-child{
+border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu ul li a:hover{
+color: rgba(255, 99, 71, 0.6);
+}
+
+.content{
+width: 1000px;
+height: 500px;
+background-color: hsl(0,100%,90%);
+margin-left: 170px; 
+margin-top: 35px;
+padding: 10px;
+}
+
+.content h1{
+color: #000;
+
+}
+
+.embed1{
+margin-left: 170px;
+}
